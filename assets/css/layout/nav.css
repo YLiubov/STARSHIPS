@@ -1,0 +1,33 @@
+nav {
+  background: var(--blk);
+  width: 100%;
+}
+
+nav > ul {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 0 auto;
+ 
+  width: clamp(1rem, calc(0.333rem + 3.333vw), 2rem); 
+  font-size: 1.4vh;
+}
+
+#navbar > ul > li {
+  list-style: none;
+  color: var(--wht);
+}
+
+#navbar a {
+  color: var(--wht);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#navbar a:hover {
+  color: var(--ylw);
+  text-decoration: underline;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
