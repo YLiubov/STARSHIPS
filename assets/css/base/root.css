@@ -8,17 +8,21 @@
 
 html {
   scroll-behavior: smooth;
+ 
+
 }
 
 body {
   font-family: roboto;
   font-size: 1rem;
   color: var(--wht);
+  background: var(--blk)
 }
 
 h1 {
   font-weight: 700;
   font-size: clamp(2.125rem, 1.4648rem + 2.8169vw, 4rem);
+  padding: 1rem 0;
   text-align: center;
 }
 h2 {

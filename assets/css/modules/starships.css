@@ -17,18 +17,18 @@
  
   cursor: pointer;
   border-radius: 12px;
-  border: 2px solid var(--blu);
+  border: 2px solid var(--ylw);
   transition: all 0.3 ease;
   box-shadow:
-    0 0 5px var(--blu),
-    0 0 10px var(--blu),
-    0 0 15px var(--blu);
+    0 0 5px var(--ylw),
+    0 0 10px var(--ylw),
+    0 0 15px var(--ylw);
 }
 
 .starship:hover {
-  border-color: var(--blu);
+  border-color: var(--ylw);
   box-shadow:
-    0 0 15px var(--blu),
-    0 0 20px var(--blu),
-    0 0 25px var(--blu);
+    0 0 15px var(--ylw),
+    0 0 20px var(--ylw),
+    0 0 25px var(--ylw);
 }

@@ -13,7 +13,7 @@
   background: var(--blk);
   height: fit-content;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
 
   cursor: pointer;
   border-radius: 12px;

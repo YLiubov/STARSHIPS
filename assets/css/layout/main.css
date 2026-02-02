@@ -1,7 +1,8 @@
 #root {
+  width: 1440px;
   margin: 0 auto;
-  padding: 2.5rem 5rem;
-  background: var(--blk);
+  padding: 2.5rem 4rem;
+  
 }
 
 h1 {
@@ -25,6 +26,11 @@ img.image {
   height: 360px;
   object-fit: cover;
   display: block;
+  transition: 0.3s ease-in-out;
+}
+
+img.image:hover {
+  scale: 105%;
 }
 
 .detail {
