@@ -1,34 +1,30 @@
 .films {
-  margin: 30px 0 60px;
+  margin: 2rem 0 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  column-gap: 40px;
-  row-gap: 40px;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
 }
 
 .film {
-  overflow: hidden;
-  padding: 20px;
-  color: var(--wht); 
+  padding: 1.2rem;
+  color: var(--wht);
   background: var(--blk);
   height: fit-content;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
- 
-  cursor: pointer;
-  border-radius: 12px;
+  max-width: 100%;
+  border-radius: 0.75rem;
   border: 2px solid var(--red);
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
   box-shadow:
-    0 0 5px var(--red),
-    0 0 10px var(--red),
-    0 0 15px var(--red);
+    0 0 0.3rem var(--red),
+    0 0 0.6rem var(--red),
+    0 0 1rem var(--red);
 }
 
 .film:hover {
   border-color: var(--red);
   box-shadow:
-    0 0 15px var(--red),
-    0 0 20px var(--red),
-    0 0 25px var(--red);
+    0 0 1rem var(--red),
+    0 0 1.2rem var(--red),
+    0 0 1.5rem var(--red);
 }
