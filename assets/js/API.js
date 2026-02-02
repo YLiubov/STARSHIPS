@@ -1,3 +1,17 @@
+const urls = {
+"films": "https://swapi.info/api/films",
+	"people": "https://swapi.info/api/people",
+	"planets": "https://swapi.info/api/planets",
+	"species": "https://swapi.info/api/species",
+	"vehicles": "https://swapi.info/api/vehicles",
+	"starships": "https://swapi.info/api/starships"
+}
+
+
+
+
+
+
 
 const filmImages = {
   "A New Hope": "hope.jpg",
@@ -144,7 +158,7 @@ export const getPeople = () => {
         image.className = 'image'
 
         const fileName = peopleImages?.[name] ?? 'placeholder.jpg'
-        image.src = `./assets/images/${fileName}`
+        image.src = `./assets/people/${fileName}`
         image.alt = name
 
         const h2 = document.createElement('h2')
@@ -197,7 +211,7 @@ export const getPlanets = () => {
         image.className = 'image'
 
         const fileName = planetImages?.[name] ?? 'placeholder.jpg'
-        image.src = `./assets/images/${fileName}`
+        image.src = `./assets/people/${fileName}`
         image.alt = name
 
         const h2 = document.createElement('h2')
@@ -248,7 +262,7 @@ export const getSpecies = () => {
         image.className = 'image'
 
         const fileName = speciesImages?.[name] ?? 'placeholder.jpg'
-        image.src = `./assets/images/${fileName}`
+        image.src = `./assets/Species/${fileName}`
         image.alt = name
 
         const h2 = document.createElement('h2')
@@ -301,7 +315,7 @@ export const getVehicles = () => {
         image.className = 'image'
 
         const fileName = vehicleImages?.[name] ?? 'placeholder.jpg'
-        image.src = `./assets/images/${fileName}`
+        image.src = `./assets/Vehicles/${fileName}`
         image.alt = name
 
         const h2 = document.createElement('h2')
@@ -358,7 +372,7 @@ export const getStarships = () => {
         image.className = 'image'
 
         const fileName = starshipImages?.[name] ?? 'placeholder.jpg'
-        image.src = `./assets/images/${fileName}`
+        image.src = `./assets/starships/${fileName}`
         image.alt = name
 
         const h2 = document.createElement('h2')
