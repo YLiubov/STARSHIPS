@@ -7,12 +7,10 @@
 }
 
 .vehicle {
- 
   overflow: hidden;
   padding: 20px;
   color: var(--wht); 
   background: var(--blk);
-  /* aspect-ratio: 4 / 5; */
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -35,12 +33,20 @@
     0 0 25px var(--red);
 }
 
+
+/* .image img{
+  /*   display: block;
+    /* width: 100%;
+    height: 100%; */
+    /* object-fit: cover;  
+
+} */ 
+
 .detail {
     display: flex;
     justify-content: space-between; 
     padding: 0.6rem 0;
     border-top: 1px solid yellow;
-
 }
 
 .label {
