@@ -1,4 +1,4 @@
-.vehicles{
+.people {
   margin: 30px 0 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -6,46 +6,38 @@
   row-gap: 40px;
 }
 
-.vehicle {
+.person {
   overflow: hidden;
   padding: 20px;
-  color: var(--wht); 
+  color: var(--wht);
   background: var(--blk);
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
- 
+
   cursor: pointer;
   border-radius: 12px;
-  border: 2px solid var(--red);
+  border: 2px solid var(--blu);
   transition: all 0.3 ease;
   box-shadow:
-    0 0 5px var(--red),
-    0 0 10px var(--red),
-    0 0 15px var(--red);
+    0 0 5px var(--blu),
+    0 0 10px var(--blu),
+    0 0 15px var(--blu);
 }
 
-.vehicle:hover {
-  border-color: var(--red);
+.person:hover {
+  border-color: var(--blu);
   box-shadow:
-    0 0 15px var(--red),
-    0 0 20px var(--red),
-    0 0 25px var(--red);
+    0 0 15px var(--blu),
+    0 0 20px var(--blu),
+    0 0 25px var(--blu);
 }
-
-img.image {
-    width: 100%;
-    height: 360px; 
-    object-fit: cover;    
-    display: block;
-}
-
 
 .detail {
-    display: flex;
-    justify-content: space-between; 
-    padding: 0.6rem 0;
-    border-top: 1px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-top: 1px solid yellow;
 }
 
 .label {

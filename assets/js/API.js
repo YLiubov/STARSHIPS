@@ -166,13 +166,13 @@ export const getPeople = () => {
         h2.innerText = name
 
         const ulInner = document.createElement('ul')
-        ulInner.className = 'personDetails'
+        ulInner.className = 'details'
 
         const filmsText = Array.isArray(films) ? `${films.length} film` : (films ?? '—')
 
         ulInner.append(
-          keyValueRow('Køn:', gender),
-          keyValueRow('Film som karakteren er med i:', filmsText)
+          keyValueRow('Køn', gender),
+          keyValueRow('Film som karakteren er med i', filmsText)
         )
 
         liWrapper.append(image, h2, ulInner)
