@@ -5,10 +5,10 @@ const doNavBar = () => {
     const arrNavItems = [
         { text: 'Forside', script: getFilms },
         { text: 'Karakterer', script: getPeople },
-         { text: 'Planeter', script: getPlanets },
-         { text: 'Species', script: getSpecies },
-          { text: 'Vehicles', script: getVehicles },
-           { text: 'starships', script: getStarships },
+        { text: 'Planeter', script: getPlanets },
+        { text: 'Species', script: getSpecies },
+        { text: 'Vehicles', script: getVehicles },
+        { text: 'Starships', script: getStarships },
 
 
     ]

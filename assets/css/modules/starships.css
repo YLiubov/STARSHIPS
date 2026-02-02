@@ -1,4 +1,4 @@
-.species{
+.starships {
   margin: 30px 0 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -6,7 +6,7 @@
   row-gap: 40px;
 }
 
-.speciesItem {
+.starship {
   overflow: hidden;
   padding: 20px;
   color: var(--wht); 
@@ -25,7 +25,7 @@
     0 0 15px var(--blu);
 }
 
-.speciesItem:hover {
+.starship:hover {
   border-color: var(--blu);
   box-shadow:
     0 0 15px var(--blu),

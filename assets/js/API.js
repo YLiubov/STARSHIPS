@@ -1,5 +1,5 @@
 const urls = {
-"films": "https://swapi.info/api/films",
+  "films": "https://swapi.info/api/films",
 	"people": "https://swapi.info/api/people",
 	"planets": "https://swapi.info/api/planets",
 	"species": "https://swapi.info/api/species",
