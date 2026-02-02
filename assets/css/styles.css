@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 
-@import url('base/reset.css');
-@import url('base/root.css');
-
-
-@import url('layout/header.css');
-@import url('layout/nav.css');
-@import url('layout/main.css');
-@import url('layout/footer.css');
-
-@import url('modules/cards.css');
+@import url("/assets/css/base/reset.css");
+@import url("/assets/css/base/root.css");
+@import url("/assets/css/layout/header.css");
+@import url("/assets/css/layout/nav.css");
+@import url("/assets/css/layout/main.css");
+@import url("/assets/css/layout/footer.css");
+@import url("/assets/css/modules/card.css");
