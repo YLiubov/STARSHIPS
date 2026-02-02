@@ -43,9 +43,12 @@ const planetImages = {
 const speciesImages = {
   "Human": "Human_Mercenary.webp",
   "Rodian": "Rodian.jpg",
-  "Trandoshan": "Trandoshan.webp",
+  "Trandoshan": "Transdoshan.webp",
   "Hutt": "Hutt.jpg",
-  "Yoda's species": "Yoda.jpg"
+  "Yoda's species": "Yoda.jpg",
+  "Droid": "Battle_Droid.webp",
+  "Wookie": "Wookie.webp",
+  "Mon Calamari": "Calamari.jpg"
 };
 const vehicleImages = {
   "AT-AT": "at at.jpeg",
@@ -57,7 +60,7 @@ const starshipImages = {
   "Death Star": "death star.jpeg",
   "Millennium Falcon": "mellenium.webp",
   "X-wing": "x wing.webp",
-  
+ 
 };
 
 const getRoot = () => document.getElementById('root')
@@ -148,7 +151,7 @@ export const getPeople = () => {
       const ulWrapper = document.createElement('ul')
       ulWrapper.className = 'people'
 
-      for (const item of data.slice(0, 10)) {
+      for (const item of data.slice(0, 8)) {
         const { name, gender, films } = item
 
         const liWrapper = document.createElement('li')
@@ -201,7 +204,7 @@ export const getPlanets = () => {
       const ulWrapper = document.createElement('ul')
       ulWrapper.className = 'planets'
 
-      for (const item of data.slice(0, 10)) {
+      for (const item of data.slice(0, 8)) {
         const { name, climate, terrain } = item
 
         const liWrapper = document.createElement('li')
@@ -252,7 +255,7 @@ export const getSpecies = () => {
       const ulWrapper = document.createElement('ul')
       ulWrapper.className = 'species'
 
-      for (const item of data.slice(0, 10)) {
+      for (const item of data.slice(0, 8)) {
         const { name, classification, designation, skin_colors, hair_colors } = item
 
         const liWrapper = document.createElement('li')
@@ -270,7 +273,7 @@ export const getSpecies = () => {
         h2.innerText = name
 
         const ulInner = document.createElement('ul')
-        ulInner.className = 'speciesDetails'
+        ulInner.className = 'speciesdetail'
 
         ulInner.append(
           keyValueRow('Klassifikation', classification),
@@ -305,7 +308,7 @@ export const getVehicles = () => {
       const ulWrapper = document.createElement('ul')
       ulWrapper.className = 'vehicles'
 
-      for (const item of data) {
+      for (const item of data.slice(0, 8)) {
         const { name, model, manufacturer, vehicle_class, crew, cargo_capacity, films } = item
 
         const liWrapper = document.createElement('li')
@@ -362,7 +365,7 @@ export const getStarships = () => {
       const ulWrapper = document.createElement('ul')
       ulWrapper.className = 'starships'
 
-      for (const item of data) {
+      for (const item of data.slice(0, 8)) {
         const { name, model, manufacturer, crew } = item
 
         const liWrapper = document.createElement('li')
