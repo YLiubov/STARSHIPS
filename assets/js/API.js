@@ -27,18 +27,26 @@ const peopleImages = {
   "Leia Organa": "Leia organa.jpg",
   "Obi-Wan Kenobi": "obi wan.webp",
   "Owen Lars": "Owen.webp",
-  "Beru Whitesun Lars": "Beru.webp",
+  "Beru Whitesun lars": "Beru.webp",
   "R2-D2": "r2d2.jpeg",
   "C-3PO": "c-3po.jpeg",
   "Biggs Darklighter": "biggs.jpg",
   "R5-D4": "r5-d4.jpg"
 };
 const planetImages = {
-  "Alderaan": "Alderaan.jpg",
+  "Alderaan": "alderaan.jpg",
   "Coruscant": "Coruscant.webp",
-  "Dagobah": "Dagobah.jpg",
+  "Dagobah": "Dahobah.jpg",
   "Hoth": "Hoth.jpg",
-  "Yavin IV": "yavin.webp"
+  "Yavin IV": "yavin.webp",
+  "Tatooine": "Tatooine.webp",
+  "Bespin": "Bespin.webp",
+  "Endor": "Endor.jpg",
+  "Naboo": "Naboo.png",
+ 
+
+
+
 };
 const speciesImages = {
   "Human": "Human_Mercenary.webp",
@@ -54,12 +62,24 @@ const vehicleImages = {
   "AT-AT": "at at.jpeg",
   "Sand Crawler": "Sand Crawler.png",
   "Snowspeeder": "SNOW.jpg",
-  "TIE Fighter": "TIE.webp"
+  "TIE Fighter": "TIE.webp",
+  "T-16 skyhopper": "skyhop.webp",
+  "X-34 landspeeder": "land speeder.jpg",
+ "TIE/LN starfighter": "TIE.webp",
+ "TIE bomber": "bomber.webp",
+ "AT-ST": "at st.jpeg"
+
 };
 const starshipImages = {
   "Death Star": "death star.jpeg",
   "Millennium Falcon": "mellenium.webp",
   "X-wing": "x wing.webp",
+  "CR90 corvette": "download.jpg",
+  "Star Destroyer": "star.jpeg",
+  "Sentinel-class landing craft": "sentinel.webp",
+  "Y-wing": "y wing.webp",
+  "TIE Advanced x1": "TIE.jpg"
+
  
 };
 
@@ -214,7 +234,7 @@ export const getPlanets = () => {
         image.className = 'image'
 
         const fileName = planetImages?.[name] ?? 'placeholder.jpg'
-        image.src = `./assets/people/${fileName}`
+        image.src = `./assets/planets/${fileName}`
         image.alt = name
 
         const h2 = document.createElement('h2')
